@@ -2,7 +2,7 @@
   "version": 2,
   "functions": {
     "api/scraper.py": {
-      "runtime": "@vercel/python"
+      "runtime": "python3.9"
     }
   }
 }
