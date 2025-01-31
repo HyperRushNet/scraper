@@ -33,4 +33,13 @@ def handler(request):
     
     if not query:
         return {
-        
+            "statusCode": 400,
+            "body": "Error: Missing 'query' parameter."
+        }
+    
+    result = get_wikipedia_intro(query)
+    
+    return {
+        "statusCode": 200,
+        "body": result
+    }
