@@ -7,7 +7,7 @@
   },
   "rewrites": [
     {
-      "source": "/ai/(.*)",
+      "source": "/(.*)",
       "destination": "/api/search?params=$1"
     }
   ]
