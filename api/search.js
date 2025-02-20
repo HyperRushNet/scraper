@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   try {
     let formattedQuery = query.trim().replace(/ /g, "+");
-    let url = `https://api.codetabs.com/v1/proxy/?quest=https://search.yahoo.com/search?p=${formattedQuery}`;
+    let url = `https://api.codetabs.com/v1/proxy/?quest=https://search.yahoo.com/search?p=${formattedQuery}-wikipedia`;
 
     const response = await fetch(url);
     const text = await response.text();
